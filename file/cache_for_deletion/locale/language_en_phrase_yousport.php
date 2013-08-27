@@ -1,0 +1,22 @@
+<?php defined('PHPFOX') or exit('NO DICE!'); ?>
+<?php $aContent = array (
+  'module_yousport' => 'yousport',
+  'latest_video' => 'Latest Videos',
+  'top_videos' => 'Top Videos',
+  'latest_blog' => 'Lastest Blogs',
+  'top_blog' => 'Top Blogs',
+  'events' => 'Events',
+  'top_events' => 'Top Events',
+  'latest_event' => 'Latest Events',
+  'login' => 'Login',
+  'signup' => 'Signup',
+  'by' => 'by',
+  'view_all' => 'View All',
+  'video' => 'Videos',
+  'view' => 'view(s)',
+  'blog_post' => 'Blog Posts',
+  'blog' => 'Blogs',
+  'no_blogs_found' => 'No blogs found',
+  'no_events_found' => 'No events found.',
+  'no_videos_found' => 'No videos found',
+); ?>

@@ -1,0 +1,47 @@
+<module>
+	<data>
+		<module_id>article</module_id>
+		<product_id>TTI-Article</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:31:"article.admin_menu_add_category";a:1:{s:3:"url";a:2:{i:0;s:7:"article";i:1;s:3:"add";}}s:36:"article.admin_menu_manage_categories";a:1:{s:3:"url";a:2:{i:0;s:7:"article";i:1;s:5:"index";}}}]]></menu>
+		<phrase_var_name>module_article</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="article" parent_var_name="" m_connection="article" var_name="menu_article_create_an_article_92a2b5cb9c6906035c2864fa225e1940" ordering="103" url_value="article.add" version_id="2.1.0" disallow_access="" module="article" />
+		<menu module_id="article" parent_var_name="" m_connection="article" var_name="menu_article_all_articles_92a2b5cb9c6906035c2864fa225e1940" ordering="101" url_value="article" version_id="2.1.0" disallow_access="" module="article" />
+		<menu module_id="article" parent_var_name="" m_connection="article" var_name="menu_article_my_articles_92a2b5cb9c6906035c2864fa225e1940" ordering="104" url_value="article.my" version_id="2.1.0" disallow_access="a:1:{i:0;s:1:&quot;3&quot;;}" module="article" />
+	</menus>
+	<blocks>
+		<block type_id="0" m_connection="article" module_id="article" component="category" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="article.index" module_id="article" component="filter" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="article.index" module_id="article" component="featured" location="1" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="article" component="category" m_connection="" module="article" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="article" component="index" m_connection="article.index" module="article" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="article" component="filter" m_connection="" module="article" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="article" component="featured" m_connection="" module="article" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="article" version_id="2.1.0" var_name="admin_menu_add_category" added="1311710657">Add Category</phrase>
+		<phrase module_id="article" version_id="2.1.0" var_name="admin_menu_manage_categories" added="1311710657">Manage Categories</phrase>
+		<phrase module_id="article" version_id="2.1.0" var_name="module_article" added="1311710657">Article</phrase>
+		<phrase module_id="article" version_id="2.1.0" var_name="menu_article_create_an_article_92a2b5cb9c6906035c2864fa225e1940" added="1311769297">Create an Article</phrase>
+		<phrase module_id="article" version_id="2.1.0" var_name="menu_article_all_articles_92a2b5cb9c6906035c2864fa225e1940" added="1312099030">Browse Articles</phrase>
+		<phrase module_id="article" version_id="2.1.0" var_name="menu_article_my_articles_92a2b5cb9c6906035c2864fa225e1940" added="1312135778">My Articles</phrase>
+	</phrases>
+</module>

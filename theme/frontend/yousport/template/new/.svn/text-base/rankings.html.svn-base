@@ -1,0 +1,16 @@
+        <div class="box-left">
+            <div class="row" style="margin-top: 15px">
+                <div class="four columns" style="text-align: center">
+                    <span style="font-size: 28px">256</span><br /><br />
+                    <span>Items Sold</span>
+                </div>
+                <div class="four columns" style="text-align: center">
+                    <span style="font-size: 28px">3,878</span><br /><br />
+                    <span>Followers</span>
+                </div>
+                <div class="four columns" style="text-align: center">
+                    <span style="font-size: 28px">4/5</span><br /><br />
+                    <span>Ratings</span>
+                </div>
+            </div>
+        </div>

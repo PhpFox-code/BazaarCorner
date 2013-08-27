@@ -1,0 +1,161 @@
+<product>
+	<data>
+		<product_id>EmailSystem</product_id>
+		<is_core>0</is_core>
+		<title>Email System</title>
+		<description>by YouNet Company</description>
+		<version>3.01</version>
+		<latest_version></latest_version>
+		<last_check>0</last_check>
+		<is_active>1</is_active>
+		<url></url>
+		<url_version_check></url_version_check>
+	</data>
+	<installs>
+		<install>
+			<version>3.01</version>
+			<install_code><![CDATA[$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem') . "` (
+ `emailsystem_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `emailsystem_name` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `round` tinyint(3) NOT NULL,
+  `total` smallint(4) unsigned NOT NULL DEFAULT '50',
+  `state` tinyint(1) NOT NULL,
+  `type_id` tinyint(1) NOT NULL,
+  `age_from` tinyint(2) NOT NULL,
+  `age_to` tinyint(2) NOT NULL,
+  `user_group_id` varchar(255) NOT NULL,
+  `country_iso` char(2) NOT NULL,
+  `gender` tinyint(1) NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
+  `time_stamp` int(9) unsigned NOT NULL,
+  `archive` tinyint(1) NOT NULL DEFAULT '1',
+  `privacy` tinyint(1) NOT NULL DEFAULT '1',
+  `template_id` int(11) DEFAULT '0',
+  `attachment_files` text,
+  `weekly_email` int(11) NOT NULL DEFAULT '0' COMMENT '0:onetime;1:daily;2:weekly;3:monthly',
+  PRIMARY KEY (`emailsystem_id`),
+  `include_none_user` int(2) NOT NULL DEFAULT '0',
+  KEY `state` (`state`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_attachment') . "` (
+ `attachment_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `view_id` tinyint(1) NOT NULL DEFAULT '0',
+  `item_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `user_id` int(10) unsigned NOT NULL,
+  `time_stamp` int(10) unsigned NOT NULL,
+  `file_name` varchar(100) NOT NULL,
+  `file_size` int(10) unsigned NOT NULL DEFAULT '0',
+  `destination` varchar(75) DEFAULT NULL,
+  `extension` varchar(20) NOT NULL,
+  `mine_type` varchar(30) DEFAULT NULL,
+  `is_image` tinyint(1) NOT NULL,
+  `counter` int(10) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`attachment_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_email_delivery') . "` (
+  `email_delivery_id` int(11) NOT NULL AUTO_INCREMENT,
+  `email_delivery_status` int(11) NOT NULL COMMENT '0:notsent;1:sending;2;complete;-1;pending',
+  `email_emailsystem_id` int(11) NOT NULL,
+  `email_emailsystem_order` int(11) NOT NULL,
+  `time_sent` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `counter` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`email_delivery_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_notifications') . "` (
+   `ems_notifications_id` int(11) NOT NULL AUTO_INCREMENT,
+  `notifications_type` int(11) NOT NULL DEFAULT '3' COMMENT '3:event;4:blog;5:....',
+  `params` text,
+  `function` text,
+  `is_active_nf` int(11) NOT NULL DEFAULT '1' COMMENT '0:notactive;1:active',
+  PRIMARY KEY (`ems_notifications_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_receiver_setting') . "` (
+  `reveiver_setting` int(11) NOT NULL AUTO_INCREMENT,
+  `receiver_id` int(11) NOT NULL DEFAULT '0',
+  `emailsystem_list` text,
+  `guest_email` varchar(255) DEFAULT NULL,
+  `is_receiver_email` int(3) NOT NULL DEFAULT '1',
+  `unsubscribe_email` text,
+  PRIMARY KEY (`reveiver_setting`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_template') . "` (
+ `template_id` int(11) NOT NULL AUTO_INCREMENT,
+  `template_type` varchar(255) NOT NULL,
+  `module_id` varchar(255) NOT NULL DEFAULT 'emailsystem',
+  `template_content` text NOT NULL,
+  `template_name` varchar(255) NOT NULL,
+  `template_subject` varchar(255) NOT NULL,
+  PRIMARY KEY (`template_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_text') . "` (
+  `emailsystem_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `text_html` mediumtext NOT NULL,
+  `text_plain` mediumtext NOT NULL,
+  PRIMARY KEY (`emailsystem_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_tracking_email') . "` (
+  `tracking_id` int(11) NOT NULL AUTO_INCREMENT,
+  `receiver_id` int(11) NOT NULL DEFAULT '0',
+  `receiver_email` varchar(255) NOT NULL,
+  `time_stamp` int(11) NOT NULL,
+  `tracking_type` int(3) NOT NULL DEFAULT '1' COMMENT '1:readmail;2:urlclick;-1:unsubscribed',
+  `email_delivery_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`tracking_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+
+$this->database()->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('emailsystem_vars') . "` (
+  `var_id` int(11) NOT NULL AUTO_INCREMENT,
+  `var_display` varchar(255) NOT NULL,
+  `var_translate` text NOT NULL,
+  `var_description` mediumtext NOT NULL,
+  PRIMARY KEY (`var_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15");
+
+$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('emailsystem_vars') . "`(`var_id`, `var_display`, `var_translate`, `var_description`) VALUES
+(2, 'site_title', 'JHNpdGVfdGl0bGU9UGhwZm94OjpnZXRQYXJhbSgiY29yZS5zaXRlX3RpdGxlIik7', 'site title'),
+(6, 'user_email', 'JHVzZXJfZW1haWwgPSAkYVVzZXJbImVtYWlsIl07', 'email of user'),
+(5, 'full_name', 'JGZ1bGxfbmFtZSA9ICRhVXNlclsiZnVsbF9uYW1lIl07', 'Full Name of user.'),
+(4, 'user_name', 'JHVzZXJfbmFtZSA9ICRhVXNlclsidXNlcl9uYW1lIl07', 'user name of user'),
+(7, 'user_birthday', 'JHVzZXJfYmlydGhkYXkgPSAkYVVzZXJbImJpcnRoZGF5Il07', ''),
+(8, 'user_image', 'JHVzZXJfaW1hZ2UgPSAkYVVzZXJbInVzZXJfaW1hZ2UiXTs=', 'image of user'),
+(9, 'user_gender', 'JHVzZXJfZ2VuZGVyID0gJGFVc2VyWyJnZW5kZXIiXTs=', ''),
+(10, 'user_status', 'JHVzZXJfc3RhdHVzID0gJGFVc2VyWyJzdGF0dXMiXTs=', ''),
+(11, 'url_site', 'JHVybF9zaXRlID0gUGhwZm94OjpnZXRQYXJhbSgiY29yZS5wYXRoIik7', 'the Url site :<br/>For example : http://phpfox.examle.com'),
+(14, 'unsubscribe_url', 'JHVuc3Vic2NyaWJlX3VybCA9IHBocGZveDo6Z2V0U2VydmljZSgnZW1haWxzeXN0ZW0udHJhY2tpbmcnKS0+Z2VuZXJhdGV1bnN1YnNjcmliZVRyYWNraW5nKCIiLCRtYWlsX2lkLCRwYXJhbXMpOw==', 'This is a link allow receiver can unsubscribe email from email system.');
+	
+");
+
+
+$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('emailsystem_notifications') . "`(`ems_notifications_id`, `notifications_type`, `params`, `function`, `is_active_nf`) VALUES
+(1, 3, 'a:3:{s:12:\"auto_mailing\";s:1:\"1\";s:11:\"comming_day\";s:1:\"7\";s:10:\"remind_day\";s:1:\"3\";}', 'cGhwZm94OjpnZXRTZXJ2aWNlKCdlbWFpbHN5c3RlbS5jcm9uJyktPnNlbmROb3RpZmljYXRpb25zKCRuZiwkcGFyYW1zKTs=', 1);
+	
+");
+$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('emailsystem') . "`(`emailsystem_id`, `emailsystem_name`, `subject`, `round`, `total`, `state`, `type_id`, `age_from`, `age_to`, `user_group_id`, `country_iso`, `gender`, `user_id`, `time_stamp`, `archive`, `privacy`, `template_id`, `attachment_files`, `weekly_email`,`include_none_user`) VALUES
+(1, 'Events Mailling', 'Comming soon Events', 0, 50, 0, 3, 0, 0, '', '', 0, 1, 1305867156, 2, 2, 1, '', 0,1);
+	
+");
+$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('emailsystem_text') . "`(`emailsystem_id`, `text_html`, `text_plain`) VALUES
+(1, 'Hello', '');
+
+");
+$this->database()->query("INSERT IGNORE INTO `" . Phpfox::getT('emailsystem_template') . "`(`template_id`,`template_type`, `module_id`, `template_content`, `template_name`, `template_subject`) VALUES
+(1,'emailtemplate', 'emailsystem', '', 'Comming Soon Events', 'Comming soon Events');
+
+");]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+	</installs>
+	<modules>
+		<module_id>emailsystem</module_id>
+	</modules>
+</product>

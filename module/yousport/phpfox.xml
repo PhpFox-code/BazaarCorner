@@ -1,0 +1,59 @@
+<module>
+	<data>
+		<module_id>yousport</module_id>
+		<product_id>yousport</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu></menu>
+		<phrase_var_name>module_yousport</phrase_var_name>
+	</data>
+	<blocks>
+		<block type_id="0" m_connection="core.index-visitor" module_id="yousport" component="photo" location="7" is_active="1" ordering="17" disallow_access="" can_move="0">
+			<title>Photo Slider</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-visitor" module_id="yousport" component="video" location="7" is_active="1" ordering="18" disallow_access="" can_move="0">
+			<title>Video</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-visitor" module_id="yousport" component="blog" location="2" is_active="1" ordering="19" disallow_access="" can_move="0">
+			<title>Blog</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-visitor" module_id="yousport" component="topevent" location="4" is_active="1" ordering="20" disallow_access="" can_move="0">
+			<title>YouNet Events</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="yousport" component="photo" m_connection="" module="yousport" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="yousport" component="video" m_connection="" module="yousport" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="yousport" component="topevent" m_connection="" module="yousport" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="module_yousport" added="1330066927">yousport</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="latest_video" added="1330322474">Latest Videos</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="top_videos" added="1330322555">Top Videos</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="latest_blog" added="1330324447">Lastest Blogs</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="top_blog" added="1330324475">Top Blogs</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="events" added="1330324887">Events</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="top_events" added="1330325005">Top Events</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="latest_event" added="1330325038">Latest Events</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="login" added="1330414304">Login</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="signup" added="1330414367">Signup</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="by" added="1330414500">by</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="view_all" added="1330414614">View All</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="video" added="1330414650">Videos</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="view" added="1330414770">view(s)</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="blog_post" added="1330414839">Blog Posts</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="blog" added="1330414882">Blogs</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="no_blogs_found" added="1332295452">No blogs found</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="no_events_found" added="1332307219">No events found.</phrase>
+		<phrase module_id="yousport" version_id="3.0.1" var_name="no_videos_found" added="1332307263">No videos found</phrase>
+	</phrases>
+</module>

@@ -1,0 +1,107 @@
+  <script>
+  document.write('<script src=js/vendor/' +
+  ('__proto__' in {} ? 'zepto.min' : 'jquery') +
+  '.js><\/script>')
+  </script>
+  <script src="js/default.min.js"></script>
+  <script src="js/default4.min.js"></script>
+  <script src="js/jquery.default.reveal.min.js"></script>
+  <script src="js/jquery.default.forms.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+  
+  <!--MOST BOUGHT START-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/contentcarousel/jquery.easing.1.3.js"></script>
+        <!-- the jScrollPane script -->
+        <script type="text/javascript" src="js/contentcarousel/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/contentcarousel/jquery.contentcarousel.js"></script>
+        <script type="text/javascript">
+                $('#ca-container').contentcarousel();
+        </script>
+  <!--MOST BOUGHT END-->   
+  
+    <script src="js/bannerslides.mini.js"></script>
+  <!--BANNER RESPONSIVE SLIDE START-->
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        //auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "centered-btns"
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "transparent-btns"
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "large-btns"
+      });
+
+    });
+  </script>
+  <!--BANNER RESPONSIVE SLIDE END-->
+  
+  
+  <!--DROP DOWN MENU START-->
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/jquery.hoverIntent.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+//<![CDATA[
+    $(document).ready(function() {
+      
+      function addMega(){
+        $(this).addClass("hovering");
+        }
+
+      function removeMega(){
+        $(this).removeClass("hovering");
+        }
+
+    var megaConfig = {
+         interval: 100,
+         sensitivity: 4,
+         over: addMega,
+         timeout: 100,
+         out: removeMega
+    };
+    $("li.mega").hoverIntent(megaConfig)
+    });
+    //]]>
+    </script>
+    <!--DROP DOWN MENU END-->
+    
+  <!--VIDEO MODAL SCRIPT START-->
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("#buttonForModal").click(function() {
+      $("#myModal").reveal();
+    });
+  });
+  </script>
+  <!--VIDEO MODAL SCRIPT END-->
+
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  
+

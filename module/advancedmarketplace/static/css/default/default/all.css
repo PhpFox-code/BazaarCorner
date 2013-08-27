@@ -1,0 +1,34 @@
+.user_profile_link_span a {
+	/* font-weight: bold; */
+	/* color: #3B5998!important; */
+}
+
+.username_listing a {
+	font-weight: bold;
+	color: #3B5998!important;
+}
+
+.listing_rate {
+	width: 130px;
+	background: none;
+}
+
+.listing_rate_detail {
+	width: 180px;
+	background: none;
+}
+
+div.row_title_image_header_body {
+    margin-left: 138px;
+    min-height: 128px !important;
+}
+
+a.advlink {
+	font-weight: bold;
+}
+
+.content .row_title_info .extra_info {
+	margin: 0px!important;
+	padding-top: 0px!important;
+	padding-bottom: 0px!important;
+}

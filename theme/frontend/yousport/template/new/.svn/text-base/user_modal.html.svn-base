@@ -1,0 +1,207 @@
+<!--VIDEO MODAL START-->
+<div id="videoModal" class="reveal-modal large">
+  <h2>This modal has video</h2>
+  <div class="flex-video">
+    <iframe width="800" height="315" src="http://www.youtube.com/embed/IkOQw96cfyE" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!--VIDEO MODAL END-->
+
+<!--PRODUCT MODAL START-->
+<div id="productModal" class="reveal-modal xlarge">
+    <div class="row" style="width:835px !important">
+        <div class="five columns">
+                <ul id="example3">
+			<li>
+				<img class="etalage_thumb_image" src="images/items/1/Leeyoung_K002_a_thumb.jpg">
+				<img class="etalage_source_image" src="images/items/1/Leeyoung_K002_a_large.jpg">
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/items/1/Leeyoung_K002_b_thumb.jpg">
+				<img class="etalage_source_image" src="images/items/1/Leeyoung_K002_b_large.jpg">
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/items/1/Leeyoung_K002_c_thumb.jpg">
+				<img class="etalage_source_image" src="images/items/1/Leeyoung_K002_c_large.jpg">
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/items/1/Leeyoung_K002_d_thumb.jpg">
+				<img class="etalage_source_image" src="images/items/1/Leeyoung_K002_d_large.jpg">
+			</li>
+		</ul>
+        </div>
+        <div class="seven columns">
+            <div class="row">
+                <div class="seven columns">
+                    <h2 style="margin-bottom: 8px !important;margin-top: 0px !important">Yuki Dress</h2>
+                    <div style="margin-bottom: 8px"><span class="span2">LeeYoung Korean Dress</span></div>
+                    <span style="font-size: 28px">$15</span>&nbsp;&nbsp;&nbsp;<span class="span4 line-through">$25 tag price</span>
+                </div>
+                <div class="four columns">
+                    <div class="ribbon-discount" style="float:right"><span class="spanq3">60%</span> <span class="spanq4">OFF</span></div><div style="clear:both"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <dl class="tabs contained">
+                      <dd class="active"><a href="#editor">Editors Notes</a></dd>
+                      <dd class="hide-for-small"><a href="#details">Details</a></dd>
+                      <dd class="hide-for-small"><a href="#sizenfit">Size & Fit</a></dd>
+                    </dl>
+                    <ul class="tabs-content contained">
+                      <li class="active" id="editorTab">
+                        Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Fusce bibendum molestie ornare. 
+                        Vestibulum dictum bibendum sapien quis egestas. <br /><br />
+
+                        Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh. Curabitur vel libero dolor, a consequat arcu.
+                      </li>
+                      <li id="detailsTab">
+                        Fusce bibendum molestie ornare. Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Vestibulum dictum bibendum sapien quis egestas. <br /><br />
+                        
+                        Curabitur vel libero dolor, a consequat arcu.
+                        Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh.
+                      </li>
+                      <li id="sizenfitTab">
+                        Vestibulum dictum bibendum sapien quis egestas. Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Fusce bibendum molestie ornare.  <br /><br />
+                        
+                        Duis convallis arcu non dolor commodo blandit. Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh. Curabitur vel libero dolor, a consequat arcu.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three columns"><a href="#" class="buy-it">Buy It</a></div>
+                <div class="three columns"><a href="#" class="add-to-wishlist">Add to Wishlist</a></div>
+                <div class="six columns"></div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <ul class="user-product-social">
+                        <li><a href="#"><img src="images/icons/favorite.png" style="position: relative; top:-5px"/></a></li>
+                        <li><a href="#"><img src="images/icons/api-tweet.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-pin-it.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-fb-like.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-email.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <ul class="square">
+                        <li><a href="#"><span class="span4">Tell a friend</span></a></li>
+                        <li><a href="#"><span class="span4">View more by Yuki Dress</span></a></li>
+                        <li><a href="#"><span class="span4">View more Dress</span></a></li>
+                    </ul>
+                </div>
+                <div class="six columns"></div>
+            </div>
+        </div>
+    </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!--PRODUCT MODAL END-->
+<style>
+        #etalage{
+                margin-right: 50px;
+        }
+        #custom_zoom_element{
+                position: absolute;
+                top: 165px;
+                left: 340px;
+        }
+</style>
+
+<!--PRODUCT MODAL ONE IMAGE ONLY START-->
+<div id="productModal-oneimg" class="reveal-modal xlarge">
+    <div class="row" style="width:835px !important">
+        <div class="five columns">
+		<ul id="etalage">
+			<li>
+				<img class="etalage_thumb_image" src="images/items/1/Leeyoung_K002_a_thumb.jpg">
+				<img class="etalage_source_image" src="images/items/1/Leeyoung_K002_a_large.jpg">
+			</li>
+		</ul>
+        </div>
+        <div class="seven columns">
+            <div class="row">
+                <div class="seven columns">
+                    <h2 style="margin-bottom: 8px !important;margin-top: 0px !important">Yuki Dress</h2>
+                    <div style="margin-bottom: 8px"><span class="span2">LeeYoung Korean Dress</span></div>
+                    <span style="font-size: 28px">$15</span>&nbsp;&nbsp;&nbsp;<span class="span4 line-through">$25 tag price</span>
+                </div>
+                <div class="four columns">
+                    <div class="ribbon-discount" style="float:right"><span class="spanq3">60%</span> <span class="spanq4">OFF</span></div><div style="clear:both"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <dl class="tabs contained">
+                      <dd class="active"><a href="#editor">Editors Notes</a></dd>
+                      <dd class="hide-for-small"><a href="#details">Details</a></dd>
+                      <dd class="hide-for-small"><a href="#sizenfit">Size & Fit</a></dd>
+                    </dl>
+                    <ul class="tabs-content contained">
+                      <li class="active" id="editorTab">
+                        Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Fusce bibendum molestie ornare. 
+                        Vestibulum dictum bibendum sapien quis egestas. <br /><br />
+
+                        Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh. Curabitur vel libero dolor, a consequat arcu.
+                      </li>
+                      <li id="detailsTab">
+                        Fusce bibendum molestie ornare. Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Vestibulum dictum bibendum sapien quis egestas. <br /><br />
+                        
+                        Curabitur vel libero dolor, a consequat arcu.
+                        Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh.
+                      </li>
+                      <li id="sizenfitTab">
+                        Vestibulum dictum bibendum sapien quis egestas. Duis eu elit arcu. Duis convallis arcu non dolor commodo blandit. 
+                        Donec et libero massa. Fusce bibendum molestie ornare.  <br /><br />
+                        
+                        Duis convallis arcu non dolor commodo blandit. Phasellus nulla nunc, semper sit amet fringilla tincidunt, egestas 
+                        id nibh. Curabitur vel libero dolor, a consequat arcu.
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three columns"><a href="#" class="buy-it">Buy It</a></div>
+                <div class="three columns"><a href="#" class="add-to-wishlist">Add to Wishlist</a></div>
+                <div class="six columns"></div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <ul class="user-product-social">
+                        <li><a href="#"><img src="images/icons/favorite.png" style="position: relative; top:-5px"/></a></li>
+                        <li><a href="#"><img src="images/icons/api-tweet.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-pin-it.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-fb-like.png" /></a></li>
+                        <li><a href="#"><img src="images/icons/api-email.png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <ul class="square">
+                        <li><a href="#"><span class="span4">Tell a friend</span></a></li>
+                        <li><a href="#"><span class="span4">View more by Yuki Dress</span></a></li>
+                        <li><a href="#"><span class="span4">View more Dress</span></a></li>
+                    </ul>
+                </div>
+                <div class="six columns"></div>
+            </div>
+        </div>
+    </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!--PRODUCT MODAL ONE IMAGE ONLY START-->

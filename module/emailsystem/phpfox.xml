@@ -1,0 +1,140 @@
+<module>
+	<data>
+		<module_id>emailsystem</module_id>
+		<product_id>EmailSystem</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:4:{s:46:"emailsystem.admin_menu_create_new_email_system";a:1:{s:3:"url";a:2:{i:0;s:11:"emailsystem";i:1;s:3:"add";}}s:43:"emailsystem.admin_menu_manage_emails_system";a:1:{s:3:"url";a:2:{i:0;s:11:"emailsystem";i:1;s:6:"manage";}}s:43:"emailsystem.admin_menu_manage_mail_template";a:1:{s:3:"url";a:2:{i:0;s:11:"emailsystem";i:1;s:12:"mailtemplate";}}s:43:"emailsystem.admin_menu_manage_notifications";a:1:{s:3:"url";a:2:{i:0;s:11:"emailsystem";i:1;s:13:"notifications";}}}]]></menu>
+		<phrase_var_name>module_emailsystem</phrase_var_name>
+	</data>
+	<settings>
+		<setting group="cron" module_id="emailsystem" is_hidden="0" type="integer" var_name="x_mail_per_round" phrase_var_name="setting_x_mail_per_round" ordering="1" version_id="2.1.0">10</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="user.privacy" module_id="emailsystem" component="settings" location="2" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-visitor" module_id="emailsystem" component="registervistorpage" location="11" is_active="1" ordering="2" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="" module_id="emailsystem" component="register" location="3" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="user.privacy" module_id="emailsystem" component="settings" location="1" is_active="0" ordering="2" disallow_access="" can_move="1">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="emailsystem" component="registervistorpage" m_connection="" module="emailsystem" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="emailsystem" component="settings" m_connection="" module="emailsystem" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="emailsystem" component="register" m_connection="" module="emailsystem" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<crons>
+		<cron module_id="emailsystem" type_id="1" every="1" is_active="0"><![CDATA[Phpfox::getService('emailsystem.cron')->cronUpdateUsers();]]></cron>
+		<cron module_id="emailsystem" type_id="1" every="1" is_active="0"><![CDATA[Phpfox::getService('emailsystem.cron')->cronSendLetter();]]></cron>
+		<cron module_id="emailsystem" type_id="1" every="1" is_active="0"><![CDATA[Phpfox::getService('emailsystem.cron')->cronNotifications();]]></cron>
+	</crons>
+	<phrases>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="module_emailsystem" added="1304390691">Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="admin_menu_create_new_email_system" added="1304396279">Create New Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="admin_menu_manage_emails_system" added="1304396279">Manage Email Systems</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="user_setting_show_privacy" added="1247249128">If enabled, members of this user group will be able to toggle a privacy setting to stop receiving emailsystems.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="user_setting_can_create_emailsystem" added="1247475131">Can members of this user group create emailsystems?</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="admin_menu_manage_emailsystems" added="1247481971">Manage Email Systems</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="you_are_not_allowed_to_delete_emailsystems" added="1255089270">You are not allowed to delete emailsystems.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="processing_job_emailsystem_id" added="1255089299">Processing job {emailsystem_id}.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="5_seconds_break_processing_job_continue_total_completed_perc" added="1255089370">5 seconds break. Processing job {continue}. Total completed {perc}%</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="job_completed_successfully" added="1255089413">Job completed successfully.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="there_was_a_problem_with_this_job_feel_free_to_resume_it_at_any_time" added="1255089426">There was a problem with this job. Feel free to resume it at any time.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="select_a_emailsystem_type" added="1255089440">Select a emailsystem type.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="emailsystem" added="1255089450">Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="add_emailsystem" added="1255089462">Add Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="emailsystem_successfully_deleted" added="1255089482">Email System successfully deleted.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="manage_emailsystems" added="1255089507">Manage Emails System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="that_emailsystem_does_not_exist" added="1255089528">That emailsystem does not exist.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="please_choose_either_html_or_plain_text" added="1255089538">Please choose either HTML or Plain text.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="receive_emailsystem" added="1255089558">Receive Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="there_are_users_still_missing_their_emailsystem_total" added="1255089593">There are users still missing their emailsystem ({total}).</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="there_are_emailsystems_in_process_total" added="1255089618">There are emailsystems in process: ({total})</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="add_a_subject" added="1255089644">Add a subject.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="how_many_users_to_contact_per_round" added="1255089653">How many users to contact per round.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="please_choose_a_type_of_emailsystem" added="1255089663">Please choose a type of emailsystem.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="you_need_to_write_a_message_to_send" added="1255089674">You need to write a message to send.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="purge_action_not_valid" added="1255089706">Purge action not valid.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="min_age_cannot_be_higher_than_max_age" added="1255089758">Min age cannot be higher than max age.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="max_age_cannot_be_lower_than_the_min_age" added="1255089783">Max age cannot be lower than the Min age.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="emailsystem_type" added="1255089834">Email System type</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="select" added="1255089842">Select</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="internal_pm" added="1255089850">Internal (PM)</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="external_email" added="1255089856">External (Email)</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="archive" added="1255089864">Archive</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="override_privacy" added="1255089874">Override Privacy</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="audience" added="1255089881">Audience</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="user_groups" added="1255089889">User Groups</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="all_user_groups" added="1255089898">All User Groups</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="selected_user_groups" added="1255089905">Selected User Groups</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="location" added="1255089915">Location</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="gender" added="1255089924">Gender</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="age_group_between" added="1255089933">Age Group Between</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="any" added="1255089940">Any</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="and" added="1255089948">and</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="how_many_per_round" added="1255089960">How many per round</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="content" added="1255089968">Content</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="subject" added="1255089980">Subject</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="html_text" added="1255089987">Html Text</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="plain_text" added="1255089995">Plain Text</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="keyword_substitutions" added="1255090007">Keyword substitutions</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="123_full_name_125_recipient_s_full_name" added="1255090016"><![CDATA[&#123;FULL_NAME&#125; => recipient's full name]]></phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="123_user_name_125_recipient_s_user_name" added="1255090025"><![CDATA[&#123;USER_NAME&#125; => recipient's user name]]></phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="123_site_name_125_site_s_name" added="1255090031"><![CDATA[&#123;SITE_NAME&#125; => site's name]]></phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="show_plain" added="1255090048">Show Plain</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="send_now" added="1255090055">Send Now</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="emailsystems" added="1255090080">Email Systems</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="user" added="1255090093">User</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="added" added="1255090100">Added</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="state" added="1255090106">State</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="edit_emailsystem" added="1255090123">Edit Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="process_emailsystem" added="1255090137">Process Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="delete_emailsystem" added="1255090148">Delete Email System</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="delete_emailsystem_subject" added="1255090169">Delete emailsystem {subject}.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="not_started" added="1255090190">Not started</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="already_started" added="1255090199">Already started</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="completed" added="1255090205">Completed</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="no_emailsystems_to_show" added="1255090298">No Emails System to show</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="posted_on_time_stamp_by_user_info" added="1255092387">Posted on {time_stamp} by {user_info}.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="read_more" added="1255092410">Read More</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="no_emailsystems_have_been_sent" added="1255092419">No Emails System have been sent.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="view_in" added="1255092569">View in:</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="html" added="1255092579">HTML</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="plain" added="1255092586">Plain</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="go_back" added="1255092598">Go back</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="this_emailsystem_is_empty" added="1255092607">This emailsystem is empty.</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="site_emailsystem_title" added="1258385702">Site Email System: {title}</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="you_have_received_a_emailsystem_from_title" added="1258385802"><![CDATA[You have received a emailsystem from {title}.
+
+To view this emailsystem follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="admin_menu_manage_mail_template" added="1304415230">Manage Email Templates</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="admin_menu_manage_notifications" added="1305788277">Manage Notifications</phrase>
+		<phrase module_id="emailsystem" version_id="2.1.0" var_name="setting_x_mail_per_round" added="1308048510"><![CDATA[<title>How many emails can be sent per round ?</title><info>To prevent your site from ISP Spam Filter . You need config limit the number email can be sent per round.</info>]]></phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="subscribe_newsletter" added="1317182622">Subscribe Newsletter</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="your_email" added="1317182939">Your Email</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="please_enter_a_valid_email_address" added="1317183085">Please enter a valid email address.</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="this_email_already_exists_please_use_another_email" added="1317191898">This email already exists. Please use another email.</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="this_email_registered_successfully" added="1317191914">This email registered successfully.</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0beta2" var_name="email_to_receive_newsletters" added="1317192685">Email to receive newsletters ...</phrase>
+		<phrase module_id="emailsystem" version_id="3.0.0rc1" var_name="manage_notifications" added="1321245420">Manage Notifications</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="emailsystem" type="boolean" admin="true" user="true" guest="true" staff="false" module="emailsystem" ordering="0">show_privacy</setting>
+	</user_group_settings>
+</module>

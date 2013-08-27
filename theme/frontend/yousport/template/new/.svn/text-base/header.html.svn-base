@@ -1,0 +1,32 @@
+<div class="row" style="margin-top: 10px;">
+    <div class="three columns" style="margin-top: 10px;">
+        <a href="#"><img src="/images/modules/inside-bazaar.png" /></a>
+    </div>
+    <div class="six columns">
+        <div class="row">
+            <div class="eight columns centered">
+                <a href="#"><img src="/images/bazaar-corner-logo.png" /></a><br />
+            </div>
+        </div>
+    </div>
+    <div class="three columns">
+        <div class="row" style="margin-top: 15px">
+            <div class="offset-by-six six columns">
+                <a href="#" style="text-decoration: underline;">SIGN IN</a>
+                / <a href="#" style="text-decoration: underline;">JOIN US</a>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px">
+            <div class="six columns">
+                <div class="twelve columns centered">
+                    <img src="/images/icons/wishlist-icon.png" />&nbsp;<a href="#">MY WISHLIST</a>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="twelve columns centered">
+                <img src="/images/icons/cart-icon.png" />&nbsp;<a href="#" style="position: relative; top: -3px">MY CART</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

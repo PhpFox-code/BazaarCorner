@@ -1,0 +1,30 @@
+<module>
+	<data>
+		<module_id>abstracturlrewrite</module_id>
+		<product_id>abstracturlrewrite</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:2:{s:36:"abstracturlrewrite.admin_menu_manage";a:1:{s:3:"url";a:2:{i:0;s:18:"abstracturlrewrite";i:1;s:6:"manage";}}s:37:"abstracturlrewrite.admin_menu_add_new";a:1:{s:3:"url";a:2:{i:0;s:18:"abstracturlrewrite";i:1;s:3:"add";}}}]]></menu>
+		<phrase_var_name>module_abstracturlrewrite</phrase_var_name>
+	</data>
+	<plugins>
+		<plugin module_id="abstracturlrewrite" product_id="abstracturlrewrite" call_name="profile.component_controller_index_process_start" title="Abstract Url Rewrite Manager - Profile Section Rewrite"><![CDATA[//profile.component_controller_index_process_start
+
+            $oDb = Phpfox::getLib('phpfox.database');
+            $aRewrite = $oDb->select('*')
+                        ->from(Phpfox::getT('rewrite'))
+                        ->where("replacement = '".$sSection."'")
+                        ->execute('getRow');
+                    
+            if(count($aRewrite))
+            {
+                $sSection = $aRewrite['url'];
+            }]]></plugin>
+	</plugins>
+	<phrases>
+		<phrase module_id="abstracturlrewrite" version_id="2.0.5" var_name="admin_menu_manage" added="1277977435">Manage</phrase>
+		<phrase module_id="abstracturlrewrite" version_id="2.0.5" var_name="admin_menu_add_new" added="1277977435">Add New</phrase>
+		<phrase module_id="abstracturlrewrite" version_id="2.0.5" var_name="module_abstracturlrewrite" added="1277977435">Rewrite Your Urls!</phrase>
+	</phrases>
+</module>

@@ -1,0 +1,107 @@
+<product>
+	<data>
+		<product_id>TTI-Article</product_id>
+		<is_core>0</is_core>
+		<title>Teamwurkz Articles</title>
+		<description>Article module for phpfox</description>
+		<version>1.1</version>
+		<latest_version></latest_version>
+		<last_check>1312987786</last_check>
+		<is_active>1</is_active>
+		<url>http://www.teamwurkz.com</url>
+		<url_version_check></url_version_check>
+	</data>
+
+	<installs>
+		<install>
+			<version>1.0</version>
+			<install_code><![CDATA[
+Phpfox::getLib('database')->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('article') . "` (
+  `article_id` int(10) NOT NULL AUTO_INCREMENT,
+  `user_id` int(10) NOT NULL DEFAULT '0',
+  `title` varchar(255) DEFAULT NULL,
+  `title_url` varchar(255) DEFAULT NULL,
+  `is_published` tinyint(1) NOT NULL DEFAULT '0',
+  `time_stamp` int(10) NOT NULL DEFAULT '0',
+  `parent_id` int(10) NOT NULL DEFAULT '0',
+  `total_views` int(10) NOT NULL DEFAULT '0',
+  `total_attachment` tinyint(2) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`article_id`)
+) ENGINE=MyISAM ");
+
+Phpfox::getLib('database')->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('article_text') . "` (
+  `article_text_id` int(10) NOT NULL AUTO_INCREMENT,
+  `article_id` int(10) NOT NULL DEFAULT '0',
+  `text` mediumtext,
+  `text_parsed` mediumtext,
+  PRIMARY KEY (`article_text_id`)
+) ENGINE=MyISAM ");
+
+Phpfox::getLib('database')->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('article_section') . "` (
+  `a_section_id` int(10) NOT NULL AUTO_INCREMENT,
+  `article_id` int(10) NOT NULL DEFAULT '0',
+  `user_id` int(10) NOT NULL DEFAULT '0',
+  `ordering` int(10) NOT NULL DEFAULT '0',
+  `title` varchar(255) DEFAULT NULL,
+  `time_stamp` int(10) NOT NULL DEFAULT '0',
+  `parent_sec_id` int(10) NOT NULL DEFAULT '0',
+  `main_article` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`a_section_id`)
+) ENGINE=MyISAM ");
+
+Phpfox::getLib('database')->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('article_category') . "` (
+  `category_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `parent_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `is_active` tinyint(1) NOT NULL DEFAULT '0',
+  `name` varchar(255) NOT NULL,
+  `name_url` varchar(255) NOT NULL,
+  `time_stamp` int(10) unsigned NOT NULL DEFAULT '0',
+  `used` int(10) unsigned NOT NULL DEFAULT '0',
+  `ordering` int(11) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`category_id`),
+  KEY `parent_id` (`parent_id`,`is_active`),
+  KEY `is_active` (`is_active`,`name_url`)
+) ENGINE=MyISAM ");
+
+Phpfox::getLib('database')->query("CREATE TABLE IF NOT EXISTS `" . Phpfox::getT('article_category_data') . "` (
+  `article_id` int(10) unsigned NOT NULL,
+  `category_id` int(10) unsigned NOT NULL,
+  KEY `category_id` (`category_id`),
+  KEY `video_id` (`article_id`)
+) ENGINE=MyISAM ");
+
+Phpfox::getLib('database')->query("INSERT INTO `" . Phpfox::getT('article_category') . "` (
+`category_id`, `parent_id`, `is_active`, `name`, `name_url`, `time_stamp`, `used`, `ordering`) VALUES
+(1, 0, 1, 'Category 1', 'category-1', 0, 0, 1),
+(2, 1, 1, 'Category 1.1', 'category-1-1', 0, 0, 2),
+(3, 1, 1, 'Category 1.2', 'category-1-2', 0, 0, 3),
+(4, 0, 1, 'Category 2', 'category-2', 0, 0, 4),
+(5, 4, 1, 'Category 2.1', 'category-2-1', 0, 0, 5),
+(6, 4, 1, 'Category 2.2', 'category-2-2', 0, 0, 6)");
+	
+]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		<install>
+			<version>1.1</version>
+			<install_code><![CDATA[
+	if( !(Phpfox::getLib('database')->isField(Phpfox::getT('article'), "is_featured")) )
+	{	
+		Phpfox::getLib('database')->addField(array(
+			  'table' => Phpfox::getT('article'),
+			  'field' => 'is_featured',
+			  'type' => 'TINYINT',
+			  'attribute' => '(1)',
+			  'null' => 'NOT NULL'			  
+			  ));
+	}	
+]]></install_code>
+			<uninstall_code></uninstall_code>
+		</install>
+		
+	</installs>	
+			
+	<modules>
+		<module_id>article</module_id>
+	</modules>
+</product>

@@ -1,0 +1,217 @@
+        <div class="box-left">
+            <span class="span3">Recent Feedbacks</span><br /><br />
+            <div class="row feedback-scroll" style="height:745px; overflow-y: scroll;overflow-x: hidden;">
+                <!-- LOOP START -->
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback1{background: url(images/users/thumb-avatar/1.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback1 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback1"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                <!-- LOOP END -->
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback2{background: url(images/users/thumb-avatar/2.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback2 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback2"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback3{background: url(images/users/thumb-avatar/3.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback3 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback3"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback4{background: url(images/users/thumb-avatar/4.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback4 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback4"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback5{background: url(images/users/thumb-avatar/5.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback5 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback5"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback6{background: url(images/users/thumb-avatar/6.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback6 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback6"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback7{background: url(images/users/thumb-avatar/7.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback7 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback7"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback8{background: url(images/users/thumb-avatar/8.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback8 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback8"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback9{background: url(images/users/thumb-avatar/9.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback9 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback9"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback10{background: url(images/users/thumb-avatar/10.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback10 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback10"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <!-- LOOP START -->
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback1{background: url(images/users/thumb-avatar/1.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback1 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback1"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                <!-- LOOP END -->
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback2{background: url(images/users/thumb-avatar/2.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback2 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback2"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback3{background: url(images/users/thumb-avatar/3.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback3 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback3"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback4{background: url(images/users/thumb-avatar/4.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback4 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback4"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback5{background: url(images/users/thumb-avatar/5.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback5 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback5"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback6{background: url(images/users/thumb-avatar/6.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback6 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback6"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback7{background: url(images/users/thumb-avatar/7.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback7 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback7"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback8{background: url(images/users/thumb-avatar/8.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback8 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback8"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback9{background: url(images/users/thumb-avatar/9.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback9 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback9"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row divfeedbacks" id="feedbackrow">
+                    <div class="three columns">
+                        <style>.circular-feedback10{background: url(images/users/thumb-avatar/10.jpg) no-repeat;width: 50px;height: 50px;border-radius: 150px;-webkit-border-radius: 150px;-moz-border-radius: 150px;}.circular-feedback10 img{opacity: 0;filter: alpha(opacity=0);}    </style>
+                        <div class="circular-feedback10"></div>
+                    </div>
+                    <div class="nine columns">
+                        <span>Donec dapibus, massa a dignissim, eros nisi auctor tortor, in suscipit </span>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="eleven columns centered"><a href="#" id="load"><div class="load-more" style="text-align: center">see more</div></a>
+                    <div class="alert-box secondary" style="display: none; text-align: center;margin-left: 12px">
+                      Feedbacks are already loaded.
+                      <a href="" class="close">&times;</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
